@@ -1,0 +1,284 @@
+*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BFECFF;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen antara kiri dan kanan */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    padding: 10px 20px;
+    background-color: #bfecff; /* Warna latar belakang */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Navbar tetap terlihat saat scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Kanan: Tautan (Home, About Us, Informasi) */
+.navbar-right {
+    display: flex; /* Tautan sejajar secara horizontal */
+    gap: 20px; /* Jarak antar tautan */
+}
+
+.navbar-right a {
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    color: black; /* Warna teks */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.navbar-right a:hover {
+    color: #dff0d8; /* Warna saat hover */
+}
+
+/* Carousel */
+.carousel-container {
+    margin-top: 0; /* Menghilangkan margin atas pada carousel */
+    padding: 0; /* Menghilangkan padding yang tidak perlu */
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Tinggi tetap */
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    min-width: 400px;       /* Gambar memenuhi lebar layar */
+    height: 100%;          /* Gambar memenuhi tinggi layar */
+    object-fit: cover;     /* Tetap menjaga proporsi gambar */
+    object-position: center; /* Fokus pada bagian tengah (default) */
+    display: none;         /* Sembunyikan gambar awalnya */
+    opacity: 0;            /* Gambar tidak terlihat */
+    transition: opacity 0.5s ease;
+    position: relative;    /* Posisi absolute untuk overlay */
+    top: 0;
+    left: 0;
+    
+}
+
+.carousel-images img.active {
+    display: block;        /* Tampilkan gambar aktif */
+    opacity: 0.7;          /* Efek transparansi */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Selamat Datang */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.welcome-section img {
+    max-width: 100%; /* Gambar tidak akan melebihi lebar kontainer */
+    height: auto;    /* Tinggi menyesuaikan untuk menjaga aspek rasio */
+    margin-bottom: 20px;
+    object-fit: cover; /* Menjaga proporsi jika kontainer tidak sesuai */
+    border-radius: 10px; /* Opsional: tambahkan sudut melengkung untuk estetika */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Opsional: tambahkan bayangan */
+}
+
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-container .btn {
+    padding: 10px 20px;
+    background-color: #FFCCEA;
+    color: BLACK;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #FFCCEA;
+}
+
+/* About Us */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8174A0;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.about-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Informasi Gangguan Mental */
+.mental-disorders {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+
+    /* Section Informasi Gangguan Mental */
+.mental-disorders {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mental-disorders h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.disorder-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar kolom dan baris */
+    justify-items: center; /* Menyelaraskan item di tengah kolom */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.disorder-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: justify; /* Teks rata kiri di dalam kartu */
+}
+
+.disorder-card h3 {
+    font-size: 22px;
+    color: #8174A0;
+    margin-bottom: 15px;
+}
+
+.disorder-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+}
+
+@media screen and ( max-width: 320px ){
+
+
+
+}
+
+@media screen and ( max-width: 375px ){
+
+
+
+}
+
+@media screen and ( max-width: 425px ){
+
+
+
+}
+
+@media screen and ( max-width: 800px ){
+
+
+
+}

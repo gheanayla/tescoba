@@ -1,0 +1,117 @@
+/* Struktur Halaman */
+.middle-page {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+/* Bagian Atas: Foto di Kiri, Teks di Kanan */
+.intro-section {
+    display: flex;
+    align-items: justify; /* Menyelaraskan secara vertikal */
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+    max-width: 1000px; /* Batas maksimum untuk gambar */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Margin bawah saat tampil vertikal */
+}
+
+.text-container h1 {
+    font-size: 28px;
+    color: #7AB2D3;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Kotak Informasi */
+.box-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px; /* Jarak antar kotak */
+}
+
+.info-box {
+    width: 100%; /* Default 100% untuk layar kecil */
+    max-width: 30%; /* Lebar maksimum pada layar besar */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px); /* Efek mengangkat saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #7AB2D3;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Tombol */
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-section button {
+    background-color: #E4B1F0;
+    color: #4B4376;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-section button:hover {
+    background-color: #E4B1F0;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Kolom vertikal pada layar kecil */
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%; /* Gambar memenuhi layar perangkat kecil */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-container {
+        text-align: center; /* Teks di tengah untuk layar kecil */
+    }
+
+    .box-section {
+        flex-direction: column; /* Kotak informasi vertikal */
+        gap: 20px; /* Jarak antar kotak */
+    }
+
+    .info-box {
+        width: 100%; /* Setiap kotak penuh di layar kecil */
+    }
+}

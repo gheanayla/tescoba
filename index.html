@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="css/style-pembuka.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+<body>
+    <div class="Nav-Design">
+        <div class="flex-content">
+            <div class="logo-design">
+                <div class="logo">
+                    <img src="img/log1.png" alt="Logo">
+                </div>
+            </div>
+            <navbar class="Navbar-Layout">
+                <li>
+                    <button class="hidethis" type="submit">Home</button>
+                </li>
+                <li>
+                    <button class="hidethis"tpye="submit">About Us</button>
+                </li>
+                <li>
+                    <button class="hidethis"tpye="submit">Informasi</button>
+                </li>
+                <li id="menu" class="menu-content"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </navbar>
+        </div>
+    </div>
+    <div class="Nav-Sidebar">
+        <div class="flex-content-sidebar">
+            <li id="closemenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <div class="logo">
+                <img src="img/log1.png" alt="Logo">
+            </div>
+            
+            <navbar id="nav" class="Navbar-Layout-sidebar">
+                <li>
+                    <button class="hidethis" type="submit">Home</button>
+                </li>
+                <li>
+                    <button class="hidethis"tpye="submit">About Us</button>
+                </li>
+                <li>
+                    <button class="hidethis"tpye="submit">Informasi</button>
+                </li>
+                </navbar>
+            </div>
+</div>
+
+
+    <!-- Carousel -->
+    <div class="carousel-section" id="home">
+        <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+                <img src="img/header1.jpg" alt="Gambar 1" class="active">
+                <img src="img/header2.jpg" alt="Gambar 2">
+                <img src="img/header3.jpg" alt="Gambar 3">
+                <img src="img/header4.jpg" alt="Gambar 4">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Selamat Datang -->
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <img src="img/welcome.jpg" alt="Welcome Image" class="welcome-image">
+            <h1>Selamat Datang di Website Diagnosa</h1>
+            <p>Temukan informasi terkait kesehatan mental dan mulailah perjalanan Anda untuk memahami diri lebih baik.</p>
+            <div class="button-container">
+                <a href="#about" class="btn">About Us</a>
+                <a href="penjelasan.html" class="btn">Mulai Test</a>
+                <a href="#info-section" class="btn">Informasi</a> <!-- Tombol Informasi -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Siapa Kami?</h3>
+                <p>Halo! Kami dari kelompok 5 kelas XII Soshum 3 dalam Projek Penguatan Profil Pelajar Pancasila (P5) dengan tema Rekayasa dan Teknologi. Dalam projek kali ini, kami fokus mengembangkan sebuah inovasi berupa website deteksi dini kesehatan mental. Melalui website ini, kami ingin menunjukkan bahwa teknologi bisa dimanfaatkan untuk hal-hal yang berguna bagi masyarakat. Harapan kami, website ini dapat menjadi langkah kecil menuju kesadaran akan pentingnya kesehatan mental.  
+
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/about.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Penjelasan Gangguan Mental: Manik, Depresi, Bipolar -->
+    <section id="info-section" class="mental-disorders">
+        <div class="disorder-cards">
+            <div class="disorder-card">
+                <h3>Manik</h3>
+                <p>Gejala manik atau mania adalah kondisi psikologis yang dapat membuat seseorang mengalami euforia di luar batas. Episode manik adalah gejala umum dari gangguan bipolar.</p>
+            </div>
+            <div class="disorder-card">
+                <h3>Depresi</h3>
+                <p>Depresi adalah kondisi ketika seseorang merasa sedih, lelah, atau kehilangan semangat dalam waktu lama, hingga sulit menikmati hidup atau melakukan aktivitas sehari-hari. penyebabnya bisa karena tekanan hidup, masalah kesehatan, atau faktor biologis, tapi depresi bisa diatasi dengan dukungan dan perawatan yang tepat.</p>
+            </div>
+            <div class="disorder-card">
+                <h3>Bipolar</h3>
+                <p>Bipolar adalah gangguan mental di mana seseorang mengalami perubahan suasana hati yang ekstrem, dari perasaan sangat gembira dan energi tinggi (manik) hingga sangat sedih dan putus asa (depresi). Perubahan suasana hati ini bisa terjadi secara tiba-tiba dan seringkali berulang.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="js/next.js"></script>
+<script src="js/Showsidebar.JS"></script>
+</html>

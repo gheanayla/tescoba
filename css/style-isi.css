@@ -1,0 +1,87 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header untuk Halaman Kedua */
+.header {
+    position: fixed;         /* Tetapkan posisi tetap di atas */
+    top: 0;                  /* Tidak ada jarak dengan tepian atas */
+    left: 0;
+    width: 100%;             /* Lebar penuh */
+    background-color: #BFECFF; /* Warna latar belakang */
+    padding: 15px 0;         /* Padding atas dan bawah untuk estetika */
+    text-align: center;      /* Tulisan di tengah */
+    color: BLACK;            /* Warna teks */
+    font-size: 24px;         /* Ukuran font */
+    font-weight: bold;       /* Tulisan tebal */
+    z-index: 10;             /* Pastikan header di atas elemen lainnya */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+
+/* Container utama */
+.container {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk daftar gejala */
+.gejala-table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 10px;
+}
+
+.gejala-table td {
+    padding: 10px;
+}
+
+.gejala-table input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style untuk tabel hasil */
+.result-table {
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 10px;
+}
+
+.result-table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.result-table td {
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+button {
+    display: block; /* Tombol akan tampil di baris baru */
+    margin: 20px auto; /* Posisikan tombol di tengah secara horizontal */
+    padding: 10px 20px; /* Tambahkan padding untuk estetika */
+    background-color: #E4B1F0;
+    color: #4B4376;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #E4B1F0;
+}

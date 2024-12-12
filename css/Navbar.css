@@ -1,0 +1,235 @@
+
+
+*{
+    margin: 0px;
+}
+
+.Nav-Design{
+    list-style-type: none;
+    background-color: #bfecff;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 20px;
+    z-index: 999;
+    
+}
+
+.flex-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.logo-design h3{
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.logo-design{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 30px;
+    
+}
+
+.Navbar-Layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding-right: 30px;
+    
+    
+}
+
+.Navbar-Layout button{
+    border: none;
+    font-size: 16px;
+    font-weight:bold;
+    transition-duration: 0.5s ;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    background: none;
+}
+
+.Navbar-Layout button:hover{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight:600;
+}
+
+
+
+
+/* Sidebar-rensponsive */
+
+.Nav-Sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #bfecff70;
+    z-index: 999;
+    box-shadow: -10px 0 10px #00000033;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.flex-content-sidebar{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    gap: 30px;
+}
+
+.logo-design-sidebar h3{
+    font-size: 10px;
+}
+
+.Navbar-Layout-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+
+.Navbar-Layout-sidebar button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.5s ;
+    text-align: center;
+    
+}
+
+.Navbar-Layout-sidebar button:hover{
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #bfecff;
+}
+
+.menu-content{
+    display: none;
+}
+
+@media screen and ( max-width: 320px ){
+
+    .Navbar-Layout{
+        width: 20%;
+    }
+
+    .logo-design{
+        width: 50%;
+        padding: 0px;
+    }
+    .logo-design img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .Navbar-Layout{
+        .hidethis{
+            display: none;
+        }
+    }
+
+    .menu-content{
+        display: block;
+    }
+
+}
+
+@media screen and ( max-width: 375px ){
+
+    .Navbar-Layout{
+        width: 20%;
+    }
+
+    .logo-design{
+        width: 60%;
+        padding: 0px;
+    }
+    .logo-design img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .Navbar-Layout{
+        .hidethis{
+            display: none;
+        }
+    }
+
+    .menu-content{
+        display: block;
+    }
+
+}
+
+@media screen and ( max-width: 425px ){
+
+    .Navbar-Layout{
+        width: 20%;
+    }
+
+    .logo-design{
+        width: 60%;
+        padding: 0px;
+    }
+    .logo-design img{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .Navbar-Layout{
+        .hidethis{
+            display: none;
+        }
+    }
+
+    .menu-content{
+        display: block;
+    }
+
+}
+
+@media screen and ( max-width: 800px ){
+
+
+    .logo-design{
+        width: 50%;
+        padding: 0px;
+    }
+
+
+    .Navbar-Layout{
+        .hidethis{
+            display: none;
+        }
+    }
+
+    .menu-content{
+        display: block;
+    }
+
+}
+
+
+
+

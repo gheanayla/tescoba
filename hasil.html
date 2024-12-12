@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Deteksi Gangguan Mental</title>
+    <link rel="stylesheet" href="css/hasil.css">
+</head>
+<body>
+    <div class="header-image-container">
+        <img src="img/ribet.png" alt="Gambar Hasil Deteksi" class="header-image">
+    </div>
+    <!-- Header -->
+    <div class="header">Hasil Deteksi Gangguan Mental</div>
+
+    <!-- Container Utama -->
+    <div class="container">
+        <h1>Hasil Deteksi</h1>
+        
+        <!-- Tabel Hasil -->
+        <table class="result-table">
+            <tr>
+                <th>Gangguan</th>
+                <th>Persentase</th>
+            </tr>
+            <tr>
+                <td>Manik</td>
+                <td id="result-manik">-</td>
+            </tr>
+            <tr>
+                <td>Depresi</td>
+                <td id="result-depresi">-</td>
+            </tr>
+            <tr>
+                <td>Bipolar</td>
+                <td id="result-bipolar">-</td>
+            </tr>
+        </table>
+
+        <!-- Solusi/Saran -->
+        <div id="solution"></div>
+
+        <!-- Tombol Kembali -->
+        <button onclick="window.location.href='index.html'">Kembali ke Halaman Utama</button>
+    </div>
+
+    <script src="js/hasil.js"></script>
+</body>
+</html>
